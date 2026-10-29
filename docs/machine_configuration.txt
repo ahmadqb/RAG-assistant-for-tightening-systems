@@ -1,0 +1,23 @@
+MACHINE CONFIGURATION - TIGHTENING STATIONS
+
+All stations use size 3 tightening spindle components and the EC303 EC motor.
+
+MCH-01
+Angle head: 3W050 (max. torque 50 Nm)
+Planetary gearbox: 3GE27 (reduction 27)
+Target tightening torque: 40 Nm
+
+MCH-02
+Angle head: 3W050 (max. torque 50 Nm)
+Planetary gearbox: 3GE27 (reduction 27)
+Target tightening torque: 40 Nm
+
+MCH-03
+Angle head: 3W090 (max. torque 90 Nm)
+Planetary gearbox: 3GE67 (reduction 67.4)
+Target tightening torque: 85 Nm
+Redundant measurement transducer: yes (redundant adapter 3AR)
+
+A torque reading above the max. torque of the installed angle head triggers error E-460.
+A torque reading that drifts away from the target torque without a program change
+usually points to measurement transducer drift (error E-451).

@@ -1,0 +1,53 @@
+MAINTENANCE MANUAL - TIGHTENING STATIONS
+
+Scope: This manual covers tightening spindle assemblies built from an angle head, a
+measurement transducer, a planetary gearbox and an EC motor (size 3 components).
+Installed angle heads: 3W027 (max. torque 27 Nm), 3W050 (max. torque 50 Nm) and
+3W090 (max. torque 90 Nm). See machine_configuration.txt for which machine uses which.
+
+Error Code E-451: Torque Sensor Calibration Required
+When error E-451 appears, the measurement transducer of the tightening spindle has
+drifted outside acceptable tolerances. This typically occurs after extended operation
+or when ambient temperature exceeds 35°C.
+
+Resolution procedure:
+1. Power down the machine and wait 5 minutes for thermal stabilization
+2. Remove the measurement transducer cover (4x M6 bolts)
+3. Connect the calibration tool (part #CAL-2024-A) to the sensor port
+4. Run the auto-calibration routine via the service menu
+5. Verify with a known reference torque within the rated range of the angle head
+6. Restart the machine and clear the error code
+
+Safety: Always wear insulated gloves when working near the measurement transducer.
+
+Error Code E-460: Torque Above Rated Maximum
+The measured torque exceeds the maximum torque of the installed angle head
+(3W027: 27 Nm, 3W050: 50 Nm, 3W090: 90 Nm). The tightening cycle is aborted.
+
+Resolution procedure:
+1. Stop the machine and apply the lockout/tagout procedure
+2. Check the tightening program: the target torque must stay below the rated maximum
+   of the installed angle head
+3. Check the bolt and thread for cross-threading or a jam
+4. Inspect the angle head for damage before restarting
+5. If E-460 repeats with a correct program, call the maintenance supervisor
+
+Error Code E-330: Redundant Transducer Mismatch
+Stations with a redundant measurement transducer (two transducers connected through
+the redundant adapter 3AR) report E-330 when the readings of the two transducers
+differ by more than the allowed tolerance. Recalibrate both transducers as described
+under E-451. If the mismatch remains, replace the transducer that deviates from the
+reference torque.
+
+Error Code E-203: Communication Timeout
+The machine has lost connection to the central PLC. Check Ethernet cable and
+verify IP address 192.168.1.50 is reachable.
+
+Error Code E-712: Emergency Stop Activated
+An emergency stop button has been pressed. Check all E-stop buttons on the
+machine and surrounding area. Reset by twisting the button clockwise.
+
+Maintenance interval:
+Size 3 tightening spindles are specified as maintenance-free for 1 million full-load
+cycles. Schedule a full inspection of the angle head, planetary gearbox and EC motor
+when a station approaches this cycle count.

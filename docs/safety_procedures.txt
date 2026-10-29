@@ -1,0 +1,27 @@
+SAFETY PROCEDURES - MANUFACTURING FLOOR
+
+Lockout/Tagout (LOTO) Procedure:
+Before performing any maintenance on machines MCH-01 through MCH-10:
+1. Notify the shift supervisor
+2. Turn off the main power switch
+3. Apply your personal lock and tag to the power disconnect
+4. Verify zero energy state by attempting to start the machine
+5. Only then proceed with maintenance work
+
+PPE Requirements:
+- Safety glasses: Always required on the manufacturing floor
+- Steel-toed boots: Required in all production areas
+- Insulated gloves: Required when working on electrical components or measurement transducers
+- Hearing protection: Required in the stamping area (above 85 dB)
+
+Tightening Spindle Hazards:
+- Spindles with an integrated feed movement have a stroke of 200 mm. Keep hands away from
+  the tool mount and the bolt supply while the machine is powered.
+- Never remove a safety guard to clear a jam without applying the LOTO procedure first.
+- Never run a tightening program with a target torque above the rated maximum of the
+  installed angle head (3W027: 27 Nm, 3W050: 50 Nm, 3W090: 90 Nm).
+
+Emergency Contacts:
+- Floor supervisor: Extension 4501
+- Safety officer: Extension 4502
+- Medical emergency: Dial 112 (EU) or 911 (US)

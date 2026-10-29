@@ -1,0 +1,12 @@
+docs/*.pdf
+venv/
+.venv/
+qdrant_storage/
+qdrant_db/
+chroma_db/
+__pycache__/
+.env
+.vscode/
+.idea/
+.DS_Store
+*.pyc
