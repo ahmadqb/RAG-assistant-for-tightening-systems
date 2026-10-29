@@ -3,6 +3,10 @@ langchain-core
 langchain-ollama
 langchain-chroma
 langchain-text-splitters
+langchain-qdrant
+qdrant-client
+fastembed
+streamlit
 langgraph
 chromadb
 requests
